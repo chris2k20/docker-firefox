@@ -1,4 +1,4 @@
-# firefox X11
+# Firefox in Docker with X11
 
 Run fresh and new firefox browser on Alpine through X11 in docker
 
