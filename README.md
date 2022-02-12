@@ -1,6 +1,6 @@
 # Firefox in Docker with X11
 
-Run a fresh and new Firefox Browser in Docker. The profile and all data will be deleted when you close the window.
+Run a fresh and new Firefox 🦊 Browser 🌐 in Docker 🐳. The profile and **all data will be deleted** when you close the window.
 
 Image is based on the [alpine](https://hub.docker.com/_/alpine/) base image.
 
@@ -17,7 +17,7 @@ XSOCK=/tmp/.X11-unix ; XAUTH=/tmp/.docker.xauth ; xauth nlist :0 | sed -e 's/^..
 
 ## Requirements
 
-- Docker and X11 installed
+- Docker 🐳 and X11 installed
 
 ## Run with simple alias: docker-firefox
 
@@ -41,3 +41,7 @@ XAUTH=/tmp/.docker.xauth
 xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
 docker run --rm -e "DISPLAY=:1" -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH -e XAUTHORITY=$XAUTH  user2k20/firefox
 ```
+
+## Thanks to alpin3 for the original code :)
+
+Feel free to create a fork as well and send a pull request. 🚀
