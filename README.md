@@ -11,6 +11,10 @@ Image is based on the [alpine](https://hub.docker.com/_/alpine/) base image
 XSOCK=/tmp/.X11-unix ; XAUTH=/tmp/.docker.xauth ; xauth nlist :0 | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge - ; docker run -e "DISPLAY=:1" -v $XSOCK:$XSOCK -v $XAUTH:$XAUTH -e XAUTHORITY=$XAUTH  user2k20/firefox
 ```
 
+## Demo
+
+![Demo](images/demo.gif)
+
 ## Requirements
 
 - Docker and X11 installed
